@@ -4,6 +4,7 @@
     <HelloWorld msg="Hi! I'm Pax. Let's build something great." />
     <OpenSourceWork />
     <ProjectsList />
+    <Education />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import OpenSourceWork from "./components/OpenSourceWork.vue";
 import ProjectsList from "./components/ProjectsList.vue";
+import Education from "./components/Education.vue";
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     HelloWorld,
     OpenSourceWork,
     ProjectsList,
+    Education,
   },
 };
 </script>
