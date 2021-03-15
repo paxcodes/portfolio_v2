@@ -13,7 +13,7 @@ import OpenSourceWork from "./components/OpenSourceWork.vue";
 import ProjectsList from "./components/ProjectsList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
     OpenSourceWork,
