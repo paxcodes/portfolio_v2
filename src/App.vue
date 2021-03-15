@@ -2,18 +2,24 @@
   <div id="app">
     <img alt="hero-ish image" src="./assets/icon.png" width="250" />
     <HelloWorld msg="Hi! I'm Pax. Let's build something great." />
+    <OpenSourceWork />
+    <ProjectsList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import OpenSourceWork from "./components/OpenSourceWork.vue";
+import ProjectsList from "./components/ProjectsList.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    OpenSourceWork,
+    ProjectsList,
+  },
+};
 </script>
 
 <style>
