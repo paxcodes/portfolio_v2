@@ -10,8 +10,8 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import OpenSourceWork from "./components/OpenSourceWork.vue";
-import ProjectsList from "./components/ProjectsList.vue";
+import OpenSourceWork from "./components/oss/OpenSourceWork.vue";
+import ProjectsList from "./components/projects/ProjectsList.vue";
 import Education from "./components/Education.vue";
 
 export default {
