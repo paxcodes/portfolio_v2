@@ -10,8 +10,8 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import OpenSourceWork from "./components/OpenSourceWork.vue";
-import ProjectsList from "./components/ProjectsList.vue";
+import OpenSourceWork from "./components/oss/OpenSourceWork.vue";
+import ProjectsList from "./components/projects/ProjectsList.vue";
 import Education from "./components/Education.vue";
 
 export default {
@@ -34,5 +34,10 @@ export default {
   color: #2c3e50;
   margin: 60px auto;
   max-width: 720px;
+}
+
+a {
+  color: #3774a6;
+  text-decoration: none;
 }
 </style>
