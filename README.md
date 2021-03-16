@@ -1,4 +1,6 @@
-# paper_free_resume
+# Pax's Portfolio
+
+<img src="./src/assets/icon.png" width="250" alt="portfolio image" />
 
 ## Project setup
 ```
