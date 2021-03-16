@@ -1,12 +1,16 @@
 <template>
   <div>
     <h2 style="margin: 40px">Open-Source Contributions</h2>
-    <FeaturedPR v-for="pr in prs" :pr="pr" :key="pr.project + pr.issueNum" />
+    <PullRequestFeatured
+      v-for="pr in prs"
+      :pr="pr"
+      :key="pr.project + pr.issueNum"
+    />
   </div>
 </template>
 
 <script>
-import FeaturedPR from "./FeaturedPR.vue";
+import PullRequestFeatured from "./PullRequestFeatured.vue";
 
 export default {
   data: () => {
@@ -33,6 +37,6 @@ export default {
       ],
     };
   },
-  components: { FeaturedPR },
+  components: { PullRequestFeatured },
 };
 </script>
