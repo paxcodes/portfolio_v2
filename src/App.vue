@@ -35,4 +35,9 @@ export default {
   margin: 60px auto;
   max-width: 720px;
 }
+
+a {
+  color: #3774a6;
+  text-decoration: none;
+}
 </style>

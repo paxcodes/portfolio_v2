@@ -18,7 +18,11 @@
           </svg>
           Merged
         </span>
-        {{ props.pr.project }} #{{ props.pr.issueNum }} <br
+        &nbsp;
+        <a :href="props.pr.link" :title="props.pr.title"
+          >{{ props.pr.project }} #{{ props.pr.issueNum }}</a
+        >
+        <br
       /></span>
       <p class="pr-title">{{ props.pr.title }}</p>
     </div>
