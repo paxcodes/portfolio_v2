@@ -6,11 +6,17 @@
       :pr="pr"
       :key="pr.project + pr.issueNum"
     />
+    <PullRequestOther
+      v-for="other_pr in other_prs"
+      :pr="other_pr"
+      :key="other_pr.project"
+    />
   </div>
 </template>
 
 <script>
 import PullRequestFeatured from "./PullRequestFeatured.vue";
+import PullRequestOther from "./PullRequestOther.vue";
 
 export default {
   data: () => {
@@ -35,8 +41,18 @@ export default {
           title: "Send pings as a custom `ping` event",
         },
       ],
+      other_prs: [
+        {
+          count: 5,
+          project: "topanswers/topanswers",
+        },
+        {
+          count: 4,
+          project: "Vancouver-Datajam/project_4",
+        },
+      ],
     };
   },
-  components: { PullRequestFeatured },
+  components: { PullRequestFeatured, PullRequestOther },
 };
 </script>
