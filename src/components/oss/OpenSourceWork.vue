@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="#os_contributions">
     <h2 style="margin: 40px">Open-Source Contributions</h2>
     <PullRequestFeatured
       v-for="pr in prs"

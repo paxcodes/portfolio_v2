@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="projects">
     <h2>Projects</h2>
     <ProjectTile :project="project" />
   </div>
