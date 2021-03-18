@@ -1,7 +1,7 @@
 <template functional>
   <div>
     <h3>{{ props.project.title }}</h3>
-    <ul>
+    <ul class="no-bullets built-with">
       <li
         v-for="(data, key) in props.project.builtWith"
         :key="props.project.title + key"
@@ -12,7 +12,7 @@
     <p>
       {{ props.project.description }}
     </p>
-    <ul>
+    <ul class="no-bullets">
       <li v-for="image in props.project.screenshots" :key="image.src">
         <img :src="image.src" :alt="image.alt" />
         <span>{{ image.alt }}</span>
@@ -22,7 +22,19 @@
 </template>
 
 <style>
-ul {
+.built-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.no-bullets {
   list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
 </style>
