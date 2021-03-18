@@ -23,9 +23,11 @@ export default {
   data: () => ({ isZoomed: false }),
   methods: {
     zoomIn() {
+      window.addEventListener("scroll", this.zoomOut);
       this.isZoomed = true;
     },
     zoomOut() {
+      window.removeEventListener("scroll", this.zoomOut);
       this.isZoomed = false;
     },
   },
