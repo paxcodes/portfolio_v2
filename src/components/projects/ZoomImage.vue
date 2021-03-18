@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper" v-on:click="toggleZoom">
+    <Frame :pose="pose" class="frame" />
     <ZoomImage
       :pose="pose"
       :src="screenshot.src"
@@ -37,6 +38,10 @@ export default {
     },
   },
   components: {
+    Frame: posed.div({
+      zoomedIn: { opacity: 1, applyAtStart: { display: "block" } },
+      zoomedOut: { opacity: 0, applyAtEnd: { display: "none" } },
+    }),
     ZoomImage: posed.img({
       zoomedIn: {
         position: "fixed",
@@ -68,5 +73,16 @@ export default {
   display: block;
   max-width: 100%;
   margin: auto;
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: white;
+  transform: translateZ(0);
 }
 </style>
