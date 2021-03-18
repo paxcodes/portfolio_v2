@@ -69,12 +69,17 @@ export default {
 <style>
 .wrapper {
   height: 8rem;
+  width: 10rem;
+  overflow: hidden;
+  display: flex;
+  margin: 10px;
 }
 
 .image {
   display: block;
   max-width: 100%;
   margin: auto;
+  align-self: center;
 }
 
 .image:hover {

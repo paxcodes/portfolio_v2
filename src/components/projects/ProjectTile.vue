@@ -21,6 +21,7 @@
 <style>
 .screenshots {
   display: flex;
+  justify-content: center;
 }
 
 .built-with {
