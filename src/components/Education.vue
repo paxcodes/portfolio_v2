@@ -1,6 +1,29 @@
 <template functional>
   <div id="education">
     <h2 style="margin-bottom: 10px">Education</h2>
-    <em style="font-size: 14px">Always learning.</em>
+    <h3>
+      Graduated B.Sc. Computer Science &middot;
+      <a href="https://dlsu.edu.ph" target="_blank" rel="noopener noreferrer"
+        >De La Salle University–Manila</a
+      >
+    </h3>
+    <p>
+      ⭐️ <strong>Outstanding Thesis (Silver Medal)</strong> — A Q&A System
+      capable of interpreting and answering comparative and evaluative questions
+      under the domain of business intelligence.
+    </p>
+    <p>⛑ <strong>Peer Tutor Volunteer</strong> &middot; Peer Tutors Society</p>
+    <ul>
+      <li>
+        Assisted professors in laboratory classes in various programming courses
+      </li>
+      <li>Tutored students in their programming course</li>
+    </ul>
   </div>
 </template>
+
+<style>
+li {
+  display: list-item;
+}
+</style>
