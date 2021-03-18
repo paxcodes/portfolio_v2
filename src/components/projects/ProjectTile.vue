@@ -1,5 +1,5 @@
 <template functional>
-  <div>
+  <div class="project">
     <h3>{{ props.project.title }}</h3>
     <ul class="no-bullets built-with">
       <li
@@ -19,16 +19,18 @@
 </template>
 
 <style>
+.project {
+  margin: 40px 0 80px;
+}
 .screenshots {
   display: flex;
-  justify-content: center;
 }
 
 .built-with {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: bold;
+  padding: 0;
 }
 
 .no-bullets {
