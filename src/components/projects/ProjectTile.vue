@@ -1,23 +1,42 @@
 <template functional>
   <div>
     <h3>{{ props.project.title }}</h3>
-    <p>
-      Generates a report on the organization’s website, Facebook page, and
-      SoundCloud account activity by integrating with Google Analytics and
-      Facebook API; Data is stored in a JSON file so current week’s data can be
-      compared with last week’s. A web form is provided for the user to enter
-      SoundCloud data not available in their API.
-    </p>
-    <ul>
-      <li>Screenshot 1</li>
-      <li>Screenshot 2</li>
-      <li>Screenshot 3</li>
+    <ul class="no-bullets built-with">
+      <li
+        v-for="(data, key) in props.project.builtWith"
+        :key="props.project.title + key"
+      >
+        <slot name="built_with" :built-with="{ key, data }"></slot>
+      </li>
     </ul>
+    <p>
+      {{ props.project.description }}
+    </p>
+    <div class="screenshots">
+      <slot name="screenshots" :screenshots="props.project.screenshots"></slot>
+    </div>
   </div>
 </template>
 
 <style>
-ul {
+.screenshots {
+  display: flex;
+  justify-content: center;
+}
+
+.built-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.no-bullets {
   list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
 </style>
