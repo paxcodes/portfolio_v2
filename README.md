@@ -2,6 +2,11 @@
 
 <img src="./src/assets/icon.png" width="250" alt="portfolio image" />
 
+## Concepts Implemented
+
+- Functional components
+- Slots, Named Slots, with parameters
+
 ## Project setup
 ```
 npm install
