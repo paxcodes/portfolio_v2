@@ -8,16 +8,9 @@
     >
       <template v-slot:built_with="{ builtWith }">
         <a v-if="builtWith.data.link" :href="builtWith.data.link">
-          <img
-            v-if="builtWith.data.icon_type"
-            :src="
-              require(`@/assets/built_with/${builtWith.key}.${builtWith.data.icon_type}`)
-            "
-            :alt="builtWith.key"
-            height="40"
-          />
-          <span v-else>{{ builtWith.key }}</span>
+          <BuiltWithIconOrText :builtWith="builtWith" />
         </a>
+        <BuiltWithIconOrText v-else :builtWith="builtWith" />
       </template>
     </ProjectTile>
   </div>
@@ -26,6 +19,7 @@
 <script>
 import Project from "@/models/Project.js";
 import ProjectTile from "./ProjectTile.vue";
+import BuiltWithIconOrText from "./BuiltWithIconOrText.vue";
 
 export default {
   data: () => {
@@ -55,7 +49,7 @@ export default {
       ],
     };
   },
-  components: { ProjectTile },
+  components: { ProjectTile, BuiltWithIconOrText },
 };
 </script>
 
