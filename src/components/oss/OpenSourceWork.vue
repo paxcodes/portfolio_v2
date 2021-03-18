@@ -1,6 +1,6 @@
 <template>
-  <div id="#os_contributions">
-    <h2 style="margin: 40px">Open-Source Contributions</h2>
+  <div id="os-contributions">
+    <h2>Open-Source Contributions</h2>
     <PullRequestFeatured
       v-for="pr in prs"
       :pr="pr"
@@ -56,3 +56,9 @@ export default {
   components: { PullRequestFeatured, PullRequestOther },
 };
 </script>
+
+<style>
+#os-contributions {
+  text-align: center;
+}
+</style>

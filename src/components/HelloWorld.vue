@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 style="text-align: center">{{ msg }}</h1>
     <p>
       I love automation because it gives people back the time they can spend to
       think deeply and creatively about solutions to big problems. I build
