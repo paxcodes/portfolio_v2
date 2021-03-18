@@ -77,6 +77,10 @@ export default {
   margin: auto;
 }
 
+.image:hover {
+  cursor: zoom-in;
+}
+
 .frame {
   position: fixed;
   top: 0;
