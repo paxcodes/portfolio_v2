@@ -12,6 +12,11 @@
 <script>
 import posed from "vue-pose";
 
+const transition = {
+  duration: 400,
+  ease: [0.08, 0.69, 0.2, 0.99],
+};
+
 export default {
   props: ["screenshot"],
   data: () => ({ isZoomed: false }),
@@ -40,12 +45,14 @@ export default {
         bottom: 0,
         right: 0,
         flip: true,
+        transition,
       },
       zoomedOut: {
         position: "static",
         width: "auto",
         height: "auto",
         flip: true,
+        transition,
       },
     }),
   },
