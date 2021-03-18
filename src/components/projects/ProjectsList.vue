@@ -46,6 +46,23 @@ export default {
             },
           ],
         }),
+        new Project({
+          title: "SoundCloud Chrome Extension",
+          builtWith: ["JS", "Chrome"],
+          description: `A private chrome extension that integrates with the SoundCloud API to check whether broadcasts are properly uploaded to SoundCloud. Before this chrome extension, someone logs into SoundCloud and manually checks 30+ broadcasts one by one to make sure it has the correct permalink and title. The chrome extension turned a tedious, error-prone task into something that can be done accurately in a few seconds.`,
+          screenshots: [
+            {
+              src:
+                "https://margret.pw/static/chromeext-before-9943f9690dd085091aa1d984635e01e2.gif",
+              alt: "CLI app",
+            },
+            {
+              src:
+                "https://margret.pw/static/chromeext-after-6e97d63c4ba3e622b5e88f89c95371ae.gif",
+              alt: "Tests without real HTTP calls",
+            },
+          ],
+        }),
       ],
     };
   },
