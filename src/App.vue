@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img alt="hero-ish image" src="./assets/icon.png" width="250" />
+    <img
+      alt="hero-ish image"
+      src="./assets/icon.png"
+      width="250"
+      style="margin: auto; display: block"
+    />
     <HelloWorld msg="Hi! I'm Pax. Let's build something great." />
     <OpenSourceWork />
     <ProjectsList />
@@ -30,14 +35,26 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin: 60px auto;
   max-width: 720px;
+  padding: 20px;
 }
 
 a {
   color: #3774a6;
   text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0 20px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+h3 {
+  font-size: 24px;
 }
 </style>
