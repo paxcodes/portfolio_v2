@@ -12,6 +12,14 @@
         </a>
         <BuiltWithIconOrText v-else :builtWith="builtWith" />
       </template>
+
+      <template v-slot:screenshots="{ screenshots }">
+        <ZoomImage
+          v-for="(screenshot, index) in screenshots"
+          :screenshot="screenshot"
+          :key="`screenshot${index}-${project.title}`"
+        />
+      </template>
     </ProjectTile>
   </div>
 </template>
@@ -19,6 +27,7 @@
 <script>
 import Project from "@/models/Project.js";
 import ProjectTile from "./ProjectTile.vue";
+import ZoomImage from "./ZoomImage.vue";
 import BuiltWithIconOrText from "./BuiltWithIconOrText.vue";
 
 export default {
@@ -66,7 +75,7 @@ export default {
       ],
     };
   },
-  components: { ProjectTile, BuiltWithIconOrText },
+  components: { ProjectTile, BuiltWithIconOrText, ZoomImage },
 };
 </script>
 

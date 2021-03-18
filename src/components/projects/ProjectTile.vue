@@ -12,16 +12,18 @@
     <p>
       {{ props.project.description }}
     </p>
-    <ul class="no-bullets">
-      <li v-for="image in props.project.screenshots" :key="image.src">
-        <img :src="image.src" :alt="image.alt" />
-        <span>{{ image.alt }}</span>
-      </li>
-    </ul>
+    <div class="screenshots">
+      <slot name="screenshots" :screenshots="props.project.screenshots"></slot>
+    </div>
   </div>
 </template>
 
 <style>
+.screenshots {
+  display: flex;
+  justify-content: center;
+}
+
 .built-with {
   display: flex;
   align-items: center;
