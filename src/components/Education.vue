@@ -1,12 +1,15 @@
 <template functional>
   <div id="education">
-    <h2 style="margin-bottom: 10px">Education</h2>
+    <h2>Education</h2>
     <h3>
-      Graduated B.Sc. Computer Science &middot;
-      <a href="https://dlsu.edu.ph" target="_blank" rel="noopener noreferrer"
-        >De La Salle University–Manila</a
-      >
+      Graduated B.Sc. Computer Science
+      <span style="font-size: 18px; display: block">
+        <a href="https://dlsu.edu.ph" target="_blank" rel="noopener noreferrer"
+          >De La Salle University–Manila</a
+        >
+      </span>
     </h3>
+
     <p>
       ⭐️ <strong>Outstanding Thesis (Silver Medal)</strong> — A Q&A System
       capable of interpreting and answering comparative and evaluative questions
