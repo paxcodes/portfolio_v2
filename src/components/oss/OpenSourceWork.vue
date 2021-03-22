@@ -35,6 +35,13 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+    ApiService.GetOtherPRs()
+      .then(({ data }) => {
+        this.other_prs = data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>
