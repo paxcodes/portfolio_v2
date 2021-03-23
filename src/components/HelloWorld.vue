@@ -4,13 +4,18 @@
       Hi! I'm Pax.<br />Let's build something great.
     </h1>
     <p>
-      I love automation because it gives people back the time they can spend to
-      think deeply and creatively about solutions to big problems. I build
-      <strong>CLI and web apps</strong> that integrate with APIs to automate
-      onerous work prone to human errors. Outside of work, I build apps and
-      their backend APIs.
+      <strong
+        >I love building automation tools (e.g. CLI apps, web apps)
+      </strong>
+      because it gives people back the time they can spend to think deeply and
+      creatively about solutions to big problems.
+      <strong>I build apps that integrate with APIs</strong> to automate onerous
+      work prone to human errors.
     </p>
-    <p>I love Python and am spoiled by its clean syntax.</p>
+    <p>
+      Outside of work, <strong>I build apps and their backend APIs</strong> for
+      fun 🥰. <strong>I love Python</strong> and am spoiled by its clean syntax.
+    </p>
   </div>
 </template>
 
