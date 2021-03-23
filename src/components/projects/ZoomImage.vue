@@ -7,6 +7,7 @@
       :alt="screenshot.alt"
       class="image"
     />
+    <figcaption>{{ screenshot.alt }}</figcaption>
   </div>
 </template>
 
@@ -52,12 +53,13 @@ export default {
         bottom: 0,
         right: 0,
         flip: true,
+        height: "auto",
         transition,
       },
       zoomedOut: {
         position: "static",
         width: "auto",
-        height: "auto",
+        height: "7rem",
         flip: true,
         transition,
       },
@@ -68,18 +70,27 @@ export default {
 
 <style>
 .wrapper {
-  height: 8rem;
+  height: 9rem;
   width: 10rem;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   margin: 10px;
+  align-items: center;
 }
 
 .image {
   display: block;
+  height: 7rem;
   max-width: 100%;
   margin: auto;
   align-self: center;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 11px;
+  margin-top: 5px;
 }
 
 .image:hover {
