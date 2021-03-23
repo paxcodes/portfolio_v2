@@ -1,5 +1,5 @@
 <template>
-  <div id="projects">
+  <div id="projects" class="section">
     <h2>Projects</h2>
     <ProjectTile
       v-for="project in projects"

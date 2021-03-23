@@ -1,5 +1,5 @@
 <template>
-  <div id="os-contributions">
+  <div id="os-contributions" class="section">
     <h2>Open-Source Contributions</h2>
     <PullRequestFeatured
       v-for="pr in prs"

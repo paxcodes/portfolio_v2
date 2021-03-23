@@ -39,6 +39,7 @@ export default {
 body {
   margin: 0;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +51,10 @@ body {
   margin: 60px auto;
   max-width: 720px;
   padding: 20px;
+}
+
+.section {
+  padding-top: 1px;
 }
 
 a {
@@ -64,7 +69,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 36px;
-  margin: 50px 0 20px;
+  margin: 70px 0 20px;
   text-decoration: underline;
   text-underline-position: under;
 }
