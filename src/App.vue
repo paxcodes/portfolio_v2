@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <img
-      alt="hero-ish image"
-      src="./assets/icon.png"
-      width="250"
-      style="margin: auto; display: block"
-    />
-    <HelloWorld />
-    <OpenSourceWork />
-    <ProjectsList />
-    <Education />
+    <Navigation />
+    <div id="main-container">
+      <img
+        alt="hero-ish image"
+        src="./assets/icon.png"
+        width="250"
+        style="margin: auto; display: block"
+      />
+      <HelloWorld />
+      <OpenSourceWork />
+      <ProjectsList />
+      <Education />
+    </div>
   </div>
 </template>
 
@@ -18,6 +21,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import OpenSourceWork from "./components/oss/OpenSourceWork.vue";
 import ProjectsList from "./components/projects/ProjectsList.vue";
 import Education from "./components/Education.vue";
+import Navigation from "./components/Navigation.vue";
 
 export default {
   name: "App",
@@ -26,16 +30,23 @@ export default {
     OpenSourceWork,
     ProjectsList,
     Education,
+    Navigation,
   },
 };
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+#main-container {
   margin: 60px auto;
   max-width: 720px;
   padding: 20px;
