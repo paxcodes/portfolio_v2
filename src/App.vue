@@ -9,8 +9,8 @@
         style="margin: auto; display: block"
       />
       <HelloWorld />
-      <OpenSourceWork />
       <ProjectsList />
+      <OpenSourceWork />
       <Education />
     </div>
   </div>
