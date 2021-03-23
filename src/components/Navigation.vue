@@ -4,6 +4,27 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#os-contributions">Open-Source Contributions</a></li>
       <li><a href="#education">Education</a></li>
+      <li>
+        <a href="mailto:pax.margret@tutanota.com"
+          ><img
+            style="background: white"
+            :src="require('@/assets/email.svg')"
+            alt="email me"
+            height="20"
+        /></a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/paxcodes"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            style="background: black"
+            :src="require('@/assets/github-light.png')"
+            alt="my github"
+            height="32"
+        /></a>
+      </li>
     </ul>
   </div>
 </template>
@@ -32,7 +53,8 @@
 }
 
 #navigation > ul > li {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 0 1rem;
 }
 </style>
