@@ -22,6 +22,11 @@
       </li>
       <li>Tutored students in their programming course</li>
     </ul>
+    <p>
+      🤓 <strong>Executive Vice President&ndash;External</strong> &middot; La
+      Salle Computer Society &mdash; I managed sponsorships and served as the
+      representative to companies.
+    </p>
   </div>
 </template>
 
