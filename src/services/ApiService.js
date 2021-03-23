@@ -7,4 +7,7 @@ export default {
     GetOtherPRs() {
         return ApiClient.get('pull-requests/other');
     },
+    GetProjects() {
+        return ApiClient.get('projects');
+    },
 }
