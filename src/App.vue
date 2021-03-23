@@ -6,7 +6,7 @@
       width="250"
       style="margin: auto; display: block"
     />
-    <HelloWorld msg="Hi! I'm Pax. Let's build something great." />
+    <HelloWorld />
     <OpenSourceWork />
     <ProjectsList />
     <Education />
@@ -46,10 +46,14 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h2 {
   text-align: center;
-  font-size: 30px;
-  margin: 40px 0 20px;
+  font-size: 36px;
+  margin: 50px 0 20px;
   text-decoration: underline;
   text-underline-position: under;
 }
