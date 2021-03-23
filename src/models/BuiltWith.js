@@ -1,4 +1,12 @@
 export default {
+    Laravel: {
+        icon_type: "svg",
+        link: "https://laravel.com/"
+    },
+    PHPUnit: {
+        icon_type: "svg",
+        link: "https://phpunit.de/"
+    },
     Python: {
         icon_type: "svg",
         link: "https://www.python.org/"
