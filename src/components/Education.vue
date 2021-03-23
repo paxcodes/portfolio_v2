@@ -1,5 +1,5 @@
 <template functional>
-  <div id="education">
+  <div id="education" class="section">
     <h2>Education</h2>
     <h3>
       Graduated B.Sc. Computer Science
