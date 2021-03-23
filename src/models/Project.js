@@ -1,12 +1,16 @@
 import BUILT_WITH from './BuiltWith.js';
 
 export default class Project {
-    constructor({ title, builtWith, description, screenshots }) {
+    constructor({ title, builtWith, description, screenshots, link, github }) {
         this.title = title;
         this.builtWith = this._transformBuiltWith(builtWith);
         this.description = description;
         this.screenshots = this._transformScreenshots(screenshots);
+        this.link = link
+        this.github = github
     }
+
+
     _transformScreenshots(screenshots) {
         return screenshots.map(value => ({
             alt: value.alt,
