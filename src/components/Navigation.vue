@@ -1,5 +1,8 @@
 <template functional>
   <nav id="navigation">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+
     <div id="menu-links">
       <a href="#projects">Projects</a>
       <a href="#os-contributions">Open-Source Contributions</a>
@@ -50,5 +53,10 @@
   color: whitesmoke;
   font-weight: bold;
   padding: 1rem;
+}
+
+#navigation label,
+#hamburger {
+  display: none;
 }
 </style>
