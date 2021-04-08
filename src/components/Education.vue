@@ -15,7 +15,7 @@
       capable of interpreting and answering comparative and evaluative questions
       under the domain of business intelligence.
     </p>
-    <p>⛑ <strong>Peer Tutor Volunteer</strong> &middot; Peer Tutors Society</p>
+    <p>👩🏻‍🚒 <strong>Peer Tutor Volunteer</strong> &middot; Peer Tutors Society</p>
     <ul>
       <li>
         Assisted professors in laboratory classes in various programming courses
