@@ -56,4 +56,39 @@
 #hamburger {
   display: none;
 }
+
+@media screen and (max-width: 730px) {
+  #navigation {
+    text-align: center;
+  }
+
+  #navigation label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  #navigation > #menu-links {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #navigation > #menu-links > a {
+    height: 100%;
+    border-top: 1px solid #333;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  /* #main-container:nav-toggled-on {
+   margin: 0;
+ }
+
+ */
+}
 </style>
+
