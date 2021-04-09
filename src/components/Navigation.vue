@@ -4,14 +4,27 @@
     <input type="checkbox" id="hamburger" />
 
     <div id="menu-links">
-      <a href="#projects">Projects</a>
-      <a href="#os-contributions">Open-Source Contributions</a>
-      <a href="#education">Education</a>
+      <a
+        href="#projects"
+        onclick="document.getElementById('hamburger').checked = false;"
+        >Projects</a
+      >
+      <a
+        href="#os-contributions"
+        onclick="document.getElementById('hamburger').checked = false;"
+        >Open-Source Contributions</a
+      >
+      <a
+        href="#education"
+        onclick="document.getElementById('hamburger').checked = false;"
+        >Education</a
+      >
 
       <a
         href="mailto:pax.margret@tutanota.com"
         target="_blank"
         rel="noopener noreferrer"
+        onclick="document.getElementById('hamburger').checked = false;"
         ><img
           style="background: white"
           :src="require('@/assets/email.svg')"
@@ -23,6 +36,7 @@
         href="https://github.com/paxcodes"
         target="_blank"
         rel="noopener noreferrer"
+        onclick="document.getElementById('hamburger').checked = false;"
         ><img
           style="background: black"
           :src="require('@/assets/github-light.png')"
