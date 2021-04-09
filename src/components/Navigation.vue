@@ -82,6 +82,14 @@
   #navigation > #menu-links > a:first-child {
     border: none;
   }
+
+  #navigation > #menu-links {
+    display: none;
+  }
+
+  #navigation input:checked ~ #menu-links {
+    display: flex;
+  }
 }
 </style>
 
