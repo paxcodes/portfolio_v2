@@ -1,8 +1,9 @@
 import BUILT_WITH from './BuiltWith.js';
 
 export default class Project {
-    constructor({ title, builtWith, description, screenshots, link, github }) {
+    constructor({ title, id, builtWith, description, screenshots, link, github }) {
         this.title = title;
+        this.id = id;
         this.builtWith = this._transformBuiltWith(builtWith);
         this.description = description;
         this.screenshots = this._transformScreenshots(screenshots);

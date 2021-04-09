@@ -1,5 +1,5 @@
 <template functional>
-  <div class="project">
+  <div class="project" :id="props.project.id">
     <h3 style="margin: 0">
       <a
         v-if="props.project.link"
@@ -52,8 +52,9 @@
 
 <style>
 .project {
-  margin: 40px 0 80px;
+  padding-top: 80px;
 }
+
 .screenshots {
   display: flex;
 }
