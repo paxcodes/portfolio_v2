@@ -8,7 +8,10 @@
       <a href="#os-contributions">Open-Source Contributions</a>
       <a href="#education">Education</a>
 
-      <a href="mailto:pax.margret@tutanota.com"
+      <a
+        href="mailto:pax.margret@tutanota.com"
+        target="_blank"
+        rel="noopener noreferrer"
         ><img
           style="background: white"
           :src="require('@/assets/email.svg')"
