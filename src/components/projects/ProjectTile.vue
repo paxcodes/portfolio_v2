@@ -61,6 +61,7 @@
 
 .built-with {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: bold;
   padding: 0;
