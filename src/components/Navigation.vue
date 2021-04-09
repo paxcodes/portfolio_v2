@@ -58,15 +58,9 @@
 }
 
 @media screen and (max-width: 730px) {
-  #navigation {
-    text-align: center;
-    height: 100vh;
-  }
-
   #navigation label {
     display: inline-block;
     color: white;
-    font-style: normal;
     font-size: 1.5em;
     padding: 10px;
   }
@@ -79,15 +73,11 @@
   #navigation > #menu-links > a {
     height: 100%;
     border-top: 1px solid #333;
-    margin: 0;
     padding: 30px;
   }
-
-  /* #main-container:nav-toggled-on {
-   margin: 0;
- }
-
- */
+  #navigation > #menu-links > a:first-child {
+    border: none;
+  }
 }
 </style>
 
