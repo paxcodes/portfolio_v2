@@ -75,6 +75,7 @@
     border-top: 1px solid #333;
     padding: 30px;
   }
+
   #navigation > #menu-links > a:first-child {
     border: none;
   }
