@@ -74,7 +74,6 @@
   #navigation > #menu-links {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
   }
 
   #navigation > #menu-links > a {
