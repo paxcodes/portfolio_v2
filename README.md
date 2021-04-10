@@ -1,6 +1,14 @@
-# Pax's Portfolio
+# Pax's Portfolio (Frontend)
 
-<img src="./src/assets/icon.png" width="250" alt="portfolio image" />
+<div style="text-align: center">
+<img src="./src/assets/icon.png" width="250" alt="portfolio image" align="center" />
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0ee12cf8-5b79-4a11-ae30-fd74576e16fa/deploy-status)](https://app.netlify.com/sites/laughing-brattain-d0abbd/deploys) [![buddy pipeline](https://app.buddy.works/paxmargret/portfolio-api/pipelines/pipeline/318477/badge.svg?token=4b2a7bd16f0c58f0eaa34f27824a709c73c4ea73cce5810e7fc62916ba745d3f "buddy pipeline")](https://app.buddy.works/paxmargret/portfolio-api/pipelines/pipeline/318477)
+
+Backend API Github Repository: [paxcodes/portfolio_api](https://github.com/paxcodes/portfolio_api)
+
+</div>
+
 
 ## Concepts Implemented
 
