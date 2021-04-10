@@ -9,7 +9,7 @@
     </a>
 </p>
 
-<p align="center"><em>Over-engineering my portfolio for hands-on learning experience! Deployed in AWS; Set up CI/CD using <a href="https://buddy.works/">buddy.works</a></em></p>
+<p align="center"><em>Over-engineering my portfolio for hands-on learning experience! Deployed in AWS;<br/>Set up CI/CD using <a href="https://buddy.works/">buddy.works</a></em></p>
 
 <p align="center">
     <img src='./docs/margret.pw_.png' alt='Front page desktop' width="400"/>
