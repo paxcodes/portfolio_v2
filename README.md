@@ -20,6 +20,8 @@
 
 ## Concepts Implemented
 
+I've heard about these before but it's the first time I've used it in an actual deployed Vue app.
+
 - Functional components
 - Slots, Named Slots, with parameters
 
