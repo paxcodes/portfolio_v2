@@ -1,4 +1,5 @@
 var PrerenderSpaPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSpaPlugin.PuppeteerRenderer
 var path = require('path')
 
 module.exports = {
@@ -7,10 +8,13 @@ module.exports = {
 
         return {
             plugins: [
-                new PrerenderSpaPlugin(
-                    path.resolve(__dirname, 'dist'),
-                    ['/']
-                ),
+                new PrerenderSpaPlugin({
+                    staticDir: path.resolve(__dirname, 'dist'),
+                    routes: ['/'],
+                    renderer: new Renderer({
+                        renderAfterTime: 5000, // Wait 5 seconds.
+                    }),
+                }),
             ],
         }
     },
