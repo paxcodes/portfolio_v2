@@ -1,7 +1,7 @@
 <template functional>
   <div class="pr">
     <div>
-      <span class="project">
+      <span class="os-project">
         <span title="Status: Merged" class="State State--merged">
           <svg
             height="16"
@@ -34,7 +34,7 @@
 .pr {
   margin: 30px 0;
 }
-.project {
+.os-project {
   font-weight: bold;
 }
 
